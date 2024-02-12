@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <title>My Playground</title>
@@ -8,24 +9,38 @@
     body {
       user-select: none;
     }
+
     i {
       color: red;
-      font-size: 20px;
-      margin-right: 4px;
+      font-size: 120px;
+      margin: 16px;
       cursor: pointer;
     }
+
     i.large {
-      font-size: 32px;
+      font-size: 250px;
     }
+
     span {
-      font-size: 20px;
+      font-size: 40px;
       color: #aaa;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vw;
     }
   </style>
 </head>
+
 <body>
-  <i class="bi bi-heart-fill" id="heart"></i>
-  <span id="counter">0</span>
+
+  <div>
+    <i class="bi bi-heart-fill" id="heart"></i>
+    <span id="counter">0</span>
+  </div>
 
   <script>
     // クリック回数を0で初期化
@@ -34,7 +49,7 @@
     const heart = document.getElementById('heart');
     // カウンターの要素を取得
     const counter = document.getElementById('counter');
-    
+
     // ハートアイコンをクリックしたときの処理
     heart.addEventListener('click', () => {
       // カウンターを1増やす
@@ -48,4 +63,5 @@
     });
   </script>
 </body>
+
 </html>
